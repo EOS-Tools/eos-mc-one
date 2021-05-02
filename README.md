@@ -1,4 +1,4 @@
-# eos-mc-uno
+# eos-mc-one
 
-## EOS MC UNO (Without Programmer)
-![EOS MC UNO - without programme](eos-mc-uno-without-programmer/eos-mc-uno-top.png)
+## EOS MC ONE (Without Programmer)
+![EOS MC ONE - without programme](eos-mc-one-without-programmer/eos-mc-one-top.png)
