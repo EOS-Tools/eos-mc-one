@@ -156,14 +156,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="1.778" y1="31.75" x2="1.778" y2="2.032" width="0" layer="20"/>
-<wire x1="1.778" y1="2.032" x2="3.048" y2="0.762" width="0" layer="20" curve="90"/>
-<wire x1="3.048" y1="0.762" x2="68.326" y2="0.762" width="0" layer="20"/>
-<wire x1="68.326" y1="0.762" x2="69.83" y2="2.266" width="0" layer="20" curve="90"/>
-<wire x1="69.83" y1="2.266" x2="69.83" y2="31.77" width="0" layer="20"/>
-<wire x1="69.83" y1="31.77" x2="68.656" y2="32.944" width="0" layer="20" curve="90"/>
-<wire x1="68.656" y1="32.944" x2="2.972" y2="32.944" width="0" layer="20"/>
-<wire x1="2.972" y1="32.944" x2="1.778" y2="31.75" width="0" layer="20" curve="90"/>
+<wire x1="1.778" y1="0.762" x2="69.83" y2="0.762" width="0" layer="20"/>
+<wire x1="69.83" y1="0.762" x2="69.83" y2="32.944" width="0" layer="20"/>
+<wire x1="69.83" y1="32.944" x2="1.778" y2="32.944" width="0" layer="20"/>
+<wire x1="1.778" y1="32.944" x2="1.778" y2="0.762" width="0" layer="20"/>
 <text x="27.432" y="2.032" size="0.508" layer="21">Vcc</text>
 <text x="29.718" y="2.032" size="0.508" layer="21">GND</text>
 <text x="32.512" y="1.27" size="0.508" layer="21">D0
@@ -192,7 +188,7 @@ TX</text>
 <text x="27.178" y="29.718" size="0.508" layer="21">GND</text>
 <text x="43.942" y="7.62" size="1.778" layer="21">Digital Pins</text>
 <text x="45.72" y="24.13" size="1.778" layer="21" rot="R180">Analog Pins</text>
-<text x="5.842" y="22.86" size="1.27" layer="21" rot="R90">SWITCH</text>
+<text x="5.334" y="22.86" size="1.778" layer="21" rot="R90">SWITCH</text>
 <text x="6.096" y="1.27" size="1.27" layer="21">POWER</text>
 <text x="15.748" y="17.018" size="1.016" layer="21" rot="R180">VCC</text>
 <text x="15.748" y="19.558" size="1.016" layer="21" rot="R180">GND</text>
@@ -206,16 +202,8 @@ TX</text>
 <text x="64.77" y="1.778" size="1.27" layer="21">22pF</text>
 <text x="62.992" y="12.7" size="1.27" layer="21" rot="R90">16 MHz</text>
 <text x="43.942" y="14.224" size="1.778" layer="21">ATMEGA328P</text>
-<text x="57.404" y="29.718" size="1.778" layer="21">EOS Tools</text>
+<text x="57.658" y="30.48" size="1.778" layer="21">EOS Tools</text>
 <text x="14.478" y="1.524" size="1.778" layer="21">MC ONE</text>
-<wire x1="3.048" y1="32.766" x2="68.58" y2="32.766" width="0.254" layer="21"/>
-<wire x1="68.58" y1="32.766" x2="69.596" y2="31.75" width="0.254" layer="21" curve="-90"/>
-<wire x1="69.596" y1="31.75" x2="69.596" y2="2.286" width="0.254" layer="21"/>
-<wire x1="69.596" y1="2.286" x2="68.326" y2="1.016" width="0.254" layer="21" curve="-90"/>
-<wire x1="68.326" y1="1.016" x2="3.048" y2="1.016" width="0.254" layer="21"/>
-<wire x1="3.048" y1="1.016" x2="2.032" y2="2.032" width="0.254" layer="21" curve="-90"/>
-<wire x1="2.032" y1="2.032" x2="2.032" y2="31.75" width="0.254" layer="21"/>
-<wire x1="2.032" y1="31.75" x2="3.048" y2="32.766" width="0.254" layer="21" curve="-90"/>
 </plain>
 <libraries>
 <library name="capacitor-wima" urn="urn:adsk.eagle:library:116">
@@ -742,7 +730,9 @@ design rules under a new name.</description>
 <element name="R5" library="adafruit" package="0805-THM" value="220Ω" x="8.89" y="15.24" smashed="yes" rot="R270"/>
 <element name="J1" library="con-headers-jp" package="SIP-100-04-40" value="F-1X04-SIP-100-40" x="17.78" y="15.24" smashed="yes" rot="R90"/>
 <element name="J2" library="con-headers-jp" package="SIP-100-12-32Y" value="F-1X12-SIP-100-32Y" x="41.91" y="5.08" smashed="yes"/>
-<element name="J3" library="con-headers-jp" package="SIP-100-12-32Y" value="F-1X12-SIP-100-32Y" x="41.91" y="26.67" smashed="yes" rot="R180"/>
+<element name="J3" library="con-headers-jp" package="SIP-100-12-32Y" value="F-1X12-SIP-100-32Y" x="41.91" y="26.67" smashed="yes" rot="R180">
+<attribute name="NAME" x="57.785" y="28.2575" size="1.016" layer="25" ratio="18" rot="R270"/>
+</element>
 <element name="R1" library="adafruit" package="0805-THM" value="10K" x="4.064" y="15.24" smashed="yes" rot="R270"/>
 <element name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="10.16" y="26.924" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="21.59" y="37.084" size="1.778" layer="27" rot="R270" display="off"/>
