@@ -756,10 +756,9 @@ design rules under a new name.</description>
 <element name="C5" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C2.5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100 NF" x="20.574" y="26.416" smashed="yes" rot="R180">
 <attribute name="POPULARITY" value="38" x="20.574" y="26.416" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C2.5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF" x="59.436" y="25.654" smashed="yes" rot="R270">
-<attribute name="NAME" x="61.214" y="27.305" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="POPULARITY" value="38" x="59.436" y="25.654" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="56.896" y="21.209" size="1.27" layer="27" ratio="10"/>
+<element name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C2.5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF" x="59.182" y="26.162" smashed="yes" rot="R270">
+<attribute name="POPULARITY" value="38" x="59.182" y="26.162" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="56.642" y="21.717" size="1.27" layer="27" ratio="10"/>
 </element>
 </elements>
 <signals>
@@ -850,8 +849,8 @@ design rules under a new name.</description>
 <vertex x="3.302" y="32.512"/>
 </polygon>
 <contactref element="C3" pad="1"/>
-<wire x1="59.436" y1="26.924" x2="60.706" y2="28.194" width="0.889" layer="1"/>
-<wire x1="60.706" y1="28.194" x2="61.468" y2="28.194" width="0.889" layer="1"/>
+<wire x1="59.182" y1="27.432" x2="59.944" y2="28.194" width="0.889" layer="1"/>
+<wire x1="59.944" y1="28.194" x2="61.468" y2="28.194" width="0.889" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="LED3" pad="A"/>
@@ -986,9 +985,9 @@ design rules under a new name.</description>
 <contactref element="J3" pad="5"/>
 <wire x1="38.1" y1="19.05" x2="38.1" y2="21.082" width="0.635" layer="16"/>
 <wire x1="39.751" y1="22.733" x2="38.1" y2="21.082" width="0.635" layer="16"/>
-<wire x1="39.751" y1="22.733" x2="44.958" y2="22.733" width="0.635" layer="16"/>
-<wire x1="44.958" y1="22.733" x2="45.72" y2="23.495" width="0.635" layer="16"/>
-<wire x1="45.72" y1="23.495" x2="45.72" y2="26.67" width="0.635" layer="16"/>
+<wire x1="39.751" y1="22.733" x2="43.942" y2="22.733" width="0.635" layer="16"/>
+<wire x1="43.942" y1="22.733" x2="45.72" y2="24.511" width="0.635" layer="16"/>
+<wire x1="45.72" y1="24.511" x2="45.72" y2="26.67" width="0.635" layer="16"/>
 </signal>
 <signal name="N$21">
 <contactref element="IC1" pad="24"/>
@@ -1065,8 +1064,8 @@ design rules under a new name.</description>
 <signal name="N$28">
 <contactref element="IC1" pad="21"/>
 <contactref element="C3" pad="2"/>
-<wire x1="59.436" y1="24.384" x2="59.436" y2="23.368" width="0.6096" layer="1"/>
-<wire x1="59.436" y1="23.368" x2="58.674" y2="22.606" width="0.6096" layer="1"/>
+<wire x1="59.182" y1="24.892" x2="59.182" y2="23.114" width="0.6096" layer="1"/>
+<wire x1="59.182" y1="23.114" x2="58.674" y2="22.606" width="0.6096" layer="1"/>
 <wire x1="58.674" y1="22.606" x2="47.244" y2="22.606" width="0.6096" layer="1"/>
 <via x="47.244" y="22.606" extent="1-16" drill="0.35"/>
 <wire x1="43.18" y1="19.05" x2="43.18" y2="19.812" width="0.6096" layer="16"/>
