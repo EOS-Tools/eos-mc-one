@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5187,6 +5187,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="R1" library="adafruit" deviceset="FLIPFLOP-RES" device="" value="10K"/>
 <part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 <part name="C5" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100 NF"/>
+<part name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -5225,9 +5226,9 @@ LED</text>
 <attribute name="VALUE" x="188.468" y="57.658" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="152.146" y="57.658" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="R1" gate="G$1" x="16.002" y="94.996" smashed="yes">
-<attribute name="NAME" x="14.732" y="88.8746" size="1.778" layer="95"/>
-<attribute name="VALUE" x="12.192" y="91.694" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="16.002" y="97.536" smashed="yes">
+<attribute name="NAME" x="7.112" y="93.9546" size="1.778" layer="95"/>
+<attribute name="VALUE" x="12.192" y="94.234" size="1.778" layer="96"/>
 </instance>
 <instance part="S1" gate="1" x="21.59" y="102.108" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.05" y="108.458" size="1.778" layer="95"/>
@@ -5236,6 +5237,9 @@ LED</text>
 <instance part="C5" gate="G$1" x="43.434" y="52.324" smashed="yes" rot="R180">
 <attribute name="NAME" x="41.275" y="50.8" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="41.275" y="63.5" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C3" gate="G$1" x="13.462" y="76.962" smashed="yes" rot="R180">
+<attribute name="VALUE" x="3.937" y="74.422" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -5303,6 +5307,10 @@ LED</text>
 <wire x1="45.72" y1="12.954" x2="183.388" y2="12.954" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="12"/>
 <wire x1="183.388" y1="12.954" x2="183.388" y2="53.848" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="13.462" y1="74.422" x2="13.462" y2="70.104" width="0.1524" layer="91"/>
+<wire x1="13.462" y1="70.104" x2="19.304" y2="70.104" width="0.1524" layer="91"/>
+<junction x="19.304" y="70.104"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5347,9 +5355,6 @@ LED</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="AREF"/>
-<wire x1="50.8" y1="94.488" x2="48.768" y2="94.488" width="0.1524" layer="91"/>
-<wire x1="48.768" y1="94.488" x2="48.768" y2="91.948" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="AVCC"/>
 <wire x1="48.768" y1="91.948" x2="50.8" y2="91.948" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -5357,11 +5362,10 @@ LED</text>
 <wire x1="36.83" y1="66.548" x2="41.402" y2="66.548" width="0.1524" layer="91"/>
 <wire x1="41.402" y1="66.548" x2="48.768" y2="66.548" width="0.1524" layer="91"/>
 <wire x1="48.768" y1="66.548" x2="50.8" y2="66.548" width="0.1524" layer="91"/>
-<wire x1="41.402" y1="66.548" x2="41.402" y2="94.996" width="0.1524" layer="91"/>
+<wire x1="41.402" y1="66.548" x2="41.402" y2="97.536" width="0.1524" layer="91"/>
 <junction x="41.402" y="66.548"/>
-<wire x1="41.402" y1="94.996" x2="41.402" y2="111.252" width="0.1524" layer="91"/>
+<wire x1="41.402" y1="97.536" x2="41.402" y2="111.252" width="0.1524" layer="91"/>
 <wire x1="48.768" y1="91.948" x2="48.768" y2="66.548" width="0.1524" layer="91"/>
-<junction x="48.768" y="91.948"/>
 <junction x="48.768" y="66.548"/>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="147.828" y1="111.252" x2="147.828" y2="98.298" width="0.1524" layer="91"/>
@@ -5373,8 +5377,8 @@ LED</text>
 <wire x1="79.248" y1="111.252" x2="79.248" y2="112.014" width="0.1524" layer="91"/>
 <junction x="79.248" y="111.252"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="21.082" y1="94.996" x2="41.402" y2="94.996" width="0.1524" layer="91"/>
-<junction x="41.402" y="94.996"/>
+<wire x1="21.082" y1="97.536" x2="41.402" y2="97.536" width="0.1524" layer="91"/>
+<junction x="41.402" y="97.536"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -5574,8 +5578,8 @@ LED</text>
 <wire x1="14.986" y1="102.108" x2="14.986" y2="101.092" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="14.986" y1="101.092" x2="14.986" y2="99.568" width="0.1524" layer="91"/>
-<wire x1="10.922" y1="94.996" x2="8.636" y2="94.996" width="0.1524" layer="91"/>
-<wire x1="8.636" y1="94.996" x2="8.636" y2="101.092" width="0.1524" layer="91"/>
+<wire x1="10.922" y1="97.536" x2="8.636" y2="97.536" width="0.1524" layer="91"/>
+<wire x1="8.636" y1="97.536" x2="8.636" y2="101.092" width="0.1524" layer="91"/>
 <wire x1="8.636" y1="101.092" x2="14.986" y2="101.092" width="0.1524" layer="91"/>
 <junction x="14.986" y="101.092"/>
 </segment>
@@ -5587,6 +5591,16 @@ LED</text>
 <wire x1="43.434" y1="17.018" x2="180.848" y2="17.018" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="11"/>
 <wire x1="180.848" y1="17.018" x2="180.848" y2="53.848" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="AREF"/>
+<wire x1="50.8" y1="94.488" x2="20.32" y2="94.488" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="94.488" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="13.462" y1="82.042" x2="13.462" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="13.462" y1="88.9" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

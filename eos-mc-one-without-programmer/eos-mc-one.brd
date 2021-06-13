@@ -756,6 +756,11 @@ design rules under a new name.</description>
 <element name="C5" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C2.5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100 NF" x="20.574" y="26.416" smashed="yes" rot="R180">
 <attribute name="POPULARITY" value="38" x="20.574" y="26.416" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
+<element name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C2.5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF" x="59.436" y="25.654" smashed="yes" rot="R270">
+<attribute name="NAME" x="61.214" y="27.305" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="POPULARITY" value="38" x="59.436" y="25.654" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="56.896" y="21.209" size="1.27" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -844,6 +849,9 @@ design rules under a new name.</description>
 <vertex x="68.58" y="32.512"/>
 <vertex x="3.302" y="32.512"/>
 </polygon>
+<contactref element="C3" pad="1"/>
+<wire x1="59.436" y1="26.924" x2="60.706" y2="28.194" width="0.889" layer="1"/>
+<wire x1="60.706" y1="28.194" x2="61.468" y2="28.194" width="0.889" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="LED3" pad="A"/>
@@ -873,7 +881,6 @@ design rules under a new name.</description>
 <wire x1="30.48" y1="12.7" x2="30.48" y2="11.43" width="0.3556" layer="1"/>
 </signal>
 <signal name="N$8">
-<contactref element="IC1" pad="21"/>
 <contactref element="IC1" pad="20"/>
 <contactref element="R5" pad="1"/>
 <contactref element="IC1" pad="7"/>
@@ -888,9 +895,6 @@ design rules under a new name.</description>
 <wire x1="13.97" y1="20.32" x2="17.78" y2="16.51" width="0.889" layer="16"/>
 <via x="40.64" y="15.494" extent="1-16" drill="0.35"/>
 <wire x1="40.64" y1="11.43" x2="40.64" y2="15.494" width="0.889" layer="16"/>
-<wire x1="43.18" y1="18.034" x2="43.18" y2="19.05" width="0.889" layer="1"/>
-<wire x1="43.18" y1="18.034" x2="40.64" y2="15.494" width="0.889" layer="1"/>
-<wire x1="43.18" y1="19.05" x2="45.72" y2="19.05" width="0.889" layer="16"/>
 <wire x1="27.94" y1="5.08" x2="27.94" y2="7.366" width="0.889" layer="1"/>
 <wire x1="27.94" y1="7.366" x2="29.464" y2="8.89" width="0.889" layer="1"/>
 <wire x1="40.132" y1="8.89" x2="40.64" y2="9.398" width="0.889" layer="1"/>
@@ -902,6 +906,10 @@ design rules under a new name.</description>
 <wire x1="6.35" y1="10.922" x2="5.588" y2="10.16" width="0.889" layer="16"/>
 <wire x1="5.588" y1="10.16" x2="4.064" y2="10.16" width="0.889" layer="16"/>
 <wire x1="8.89" y1="20.32" x2="7.112" y2="20.32" width="0.889" layer="16"/>
+<wire x1="40.64" y1="15.494" x2="41.656" y2="16.51" width="0.889" layer="1"/>
+<wire x1="41.656" y1="16.51" x2="44.704" y2="16.51" width="0.889" layer="1"/>
+<wire x1="44.704" y1="16.51" x2="45.72" y2="17.526" width="0.889" layer="1"/>
+<wire x1="45.72" y1="17.526" x2="45.72" y2="19.05" width="0.889" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="IC1" pad="4"/>
@@ -1053,6 +1061,17 @@ design rules under a new name.</description>
 <wire x1="29.464" y1="24.384" x2="23.114" y2="24.384" width="0.889" layer="16"/>
 <wire x1="23.114" y1="24.384" x2="21.844" y2="25.654" width="0.889" layer="16"/>
 <wire x1="21.844" y1="26.416" x2="21.844" y2="25.654" width="0.889" layer="16"/>
+</signal>
+<signal name="N$28">
+<contactref element="IC1" pad="21"/>
+<contactref element="C3" pad="2"/>
+<wire x1="59.436" y1="24.384" x2="59.436" y2="23.368" width="0.6096" layer="1"/>
+<wire x1="59.436" y1="23.368" x2="58.674" y2="22.606" width="0.6096" layer="1"/>
+<wire x1="58.674" y1="22.606" x2="47.244" y2="22.606" width="0.6096" layer="1"/>
+<via x="47.244" y="22.606" extent="1-16" drill="0.35"/>
+<wire x1="43.18" y1="19.05" x2="43.18" y2="19.812" width="0.6096" layer="16"/>
+<wire x1="45.974" y1="22.606" x2="47.244" y2="22.606" width="0.6096" layer="16"/>
+<wire x1="43.18" y1="19.812" x2="45.974" y2="22.606" width="0.6096" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
