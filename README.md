@@ -1,6 +1,6 @@
 # Introduction
 
-The repository contains the eagle files for an ardunio uno clone with small size. The design imphasizes on production ready design. Users can design hats for the device
+The repository contains the eagle files for an ardunio uno clone with small size. The design imphasizes on production ready design. Users can design hats for the device.
 
 ## Models
 
@@ -8,10 +8,12 @@ The repository contains the eagle files for an ardunio uno clone with small size
 
 #### Top View
 
-![EOS MC ONE - without programme - top](eos-mc-one-without-programmer/eos-mc-one-top.png)
+![Sashwat's MC ONE - without programme - top](sashwat-mc-one-without-programmer/sashwat-mc-one-top.png)
 
 #### Bottom View
-![EOS MC ONE - without programme - bottom](eos-mc-one-without-programmer/eos-mc-one-bottom.png)
+
+![Sashwat's MC ONE - without programme - bottom](sashwat-mc-one-without-programmer/sashwat-mc-one-bottom.png)
 
 #### Drill View
-![EOS MC ONE - without programme - drills](eos-mc-one-without-programmer/eos-mc-one-drills.png)
+
+![Sashwat's MC ONE - without programme - drills](sashwat-mc-one-without-programmer/sashwat-mc-one-drills.png)
