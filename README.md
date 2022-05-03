@@ -8,9 +8,13 @@ The repository contains the eagle files for an ardunio uno clone with small size
 
 #### Top View
 
+![Sashwat's MC ONE - without programme - PCB top](sashwat-mc-one-smd-without-programmer/pcb_front.jpg)
+
 ![Sashwat's MC ONE - without programme - top](sashwat-mc-one-smd-without-programmer/sashwat-mc-one-smd-top.png)
 
 #### Bottom View
+
+![Sashwat's MC ONE - without programme - PCB bottom](sashwat-mc-one-smd-without-programmer/pcb_bottom.jpg)
 
 ![Sashwat's MC ONE - without programme - top](sashwat-mc-one-smd-without-programmer/sashwat-mc-one-smd-bottom.png)
 
@@ -22,9 +26,13 @@ The repository contains the eagle files for an ardunio uno clone with small size
 
 #### Top View
 
+![Sashwat's MC ONE - without programme - PCB top](sashwat-mc-one-without-programmer/pcb_front.jpg)
+
 ![Sashwat's MC ONE - without programme - top](sashwat-mc-one-without-programmer/sashwat-mc-one-top.png)
 
 #### Bottom View
+
+![Sashwat's MC ONE - without programme - PCB top](sashwat-mc-one-without-programmer/pcb_bottom.jpg)
 
 ![Sashwat's MC ONE - without programme - bottom](sashwat-mc-one-without-programmer/sashwat-mc-one-bottom.png)
 
